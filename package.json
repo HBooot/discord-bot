@@ -2,9 +2,12 @@
   "name": "hbot",
   "version": "0.0.1",
   "description": "Discord bot",
-  "main": "index.js",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "help": "node src/helps.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/HBooot/discord-bot/issues"
   },
-  "homepage": "https://github.com/HBooot/discord-bot#readme"
+  "homepage": "https://github.com/HBooot/discord-bot#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "nodemon": "^2.0.15"
+  }
 }
